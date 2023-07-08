@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup page</title>
+    <link rel="stylesheet" href="signup.css">
+    <style>
+    .container{
+    color:white;
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+.btn{
+	padding: 8px 20px;
+	background-color:green;
+	color: white;
+	border-radius: 15px;
+	cursor: pointer;
+}
+body{
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/07/Forests-bridges-natural-scenery-hd-wallpaper-backgrounds-1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:697px;
+    width:1520px;
+}
+.form{
+    height:350px;
+    width:350px;
+    margin-top:12%;
+    margin-left:40%;
+    position:relative;
+    border-radius: 50%;
+}
+.input{
+    margin-left: 26%;
+    margin-top: 30%;
+    position: absolute;
+    font-size: 20px;
+    color:antiquewhite;
+}
+
+.rbtn{
+	cursor: pointer;
+	margin-left: 10%;
+	padding: 8px 20px;
+	background-color:green;
+	color: white;
+	border-radius: 15px;
+	
+}
+fieldset{
+	position: relative;
+    background-color:rgba(1, 44, 19, 0.5);
+	top: 14%;
+	height: 610px;
+	width: 400px;
+	margin-left: 32.5%;
+	border-radius: 30px;
+    margin-top: -7%;
+    border: 2px solid green;
+}
+h2{
+    color: white;
+}
+a{
+    color:goldenrod;
+}
+</style>
+</head>
+<body>
+<center><h2>SIGN UP</h2></center>
+<fieldset>
+<div class="container">
+    <center>
+    <form action="success.html">
+        First Name<br><input type="text" placeholder="Enter your First Name..."required><br><br>
+        Middle Name<br><input type="text" placeholder="Enter your Middle Name..."required><br><br>
+        Last Name<br><input type="text" placeholder="Enter your Last Name..."required><br><br>
+        D.O.B<br><input type="date" placeholder="Enter your d.o.b..."required><br><br>
+        <label for="Gender">Gender</label><br>
+            <select name="Gender" id="gen">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="prefer not to say">Prefer not to say</option>
+            </select><br><br>
+        Email-id <br><input type="email" placeholder="Enter your email..."required><br><br>
+        Create Password <br><input type="password" placeholder="Enter your password..."required><br><br>
+        Re-enter Password <br><input type="password" placeholder="Confirm your password..."required><br><br>
+        <input required type="checkbox">I agree to this Terms & Conditions<br><br> 
+        <button class="btn" type="submit">Create Account</button>
+        <button type="reset" class="rbtn">Reset</button>
+        <p>if you have alredy account?<a href="./login.html"> Login</a></p>
+    </center>
+</form>
+</fieldset>
+</body>
+</html>
